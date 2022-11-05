@@ -1,8 +1,8 @@
 services:
-  app:
-    image: container-bhnsi7o
-    build:
-      context: ./src
+  grocy:
+    image: linuxserver/grocy:latest
+    container_name: grocy
+    hostname: grocy
     ports:
       - "5000:80"
     volumes:
